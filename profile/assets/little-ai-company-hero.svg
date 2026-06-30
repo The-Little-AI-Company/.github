@@ -23,17 +23,18 @@
   </defs>
   <rect width="1280" height="640" rx="34" fill="url(#bg)"/>
   <rect width="1280" height="640" rx="34" fill="url(#paper)"/>
-  <path d="M 0 430 L 310 430 L 420 640 L 0 640 Z" fill="#f97316" opacity="0.94"/>
-  <path d="M 240 640 L 520 235 L 776 640 Z" fill="#facc15" opacity="0.93"/>
-  <path d="M 676 640 L 952 322 L 1280 640 Z" fill="#22c55e" opacity="0.82"/>
+  <path d="M 0 452 L 310 452 L 420 640 L 0 640 Z" fill="#f97316" opacity="0.84"/>
+  <path d="M 260 640 L 550 282 L 780 640 Z" fill="#facc15" opacity="0.72"/>
+  <path d="M 676 640 L 970 352 L 1280 640 Z" fill="#22c55e" opacity="0.72"/>
   <rect x="860" y="104" width="276" height="276" rx="52" fill="#0f172a" stroke="#ffffff" stroke-opacity="0.13" stroke-width="2"/>
   <path d="M 928 272 C 932 196 984 158 1046 174 C 1102 188 1125 252 1082 304 C 1044 350 960 342 928 272 Z" fill="url(#warm)" opacity="0.96"/>
   <path d="M 932 274 C 984 226 1032 218 1088 246" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
   <path d="M 920 178 C 886 134 886 102 918 76 C 959 101 966 137 940 184 Z" fill="url(#leaf)"/>
-  <text x="82" y="126" fill="#fbbf24" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="3">THE LITTLE AI COMPANY</text>
-  <text x="80" y="220" fill="#f9fafb" font-family="Segoe UI, Arial, sans-serif" font-size="70" font-weight="850">Practical AI systems</text>
-  <text x="84" y="294" fill="#e5e7eb" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="650">for real work</text>
-  <text x="86" y="372" fill="#d6d3d1" font-family="Segoe UI, Arial, sans-serif" font-size="28">Tools, guides, workflows, and implementation help for people who need AI to be useful.</text>
+  <rect x="54" y="74" width="802" height="350" rx="34" fill="#0b1220" fill-opacity="0.86" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2"/>
+  <text x="82" y="126" fill="#fde68a" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="3">THE LITTLE AI COMPANY</text>
+  <text x="80" y="220" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="70" font-weight="850">Practical AI systems</text>
+  <text x="84" y="294" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="700">for real work</text>
+  <text x="86" y="372" fill="#e7e5e4" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="500">Tools, guides, workflows, and implementation help for people who need AI to be useful.</text>
   <g transform="translate(86 456)">
     <rect width="188" height="46" rx="23" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.15"/>
     <text x="25" y="31" fill="#f9fafb" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="750">Zo resources</text>

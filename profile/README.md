@@ -1,4 +1,4 @@
-![The Little AI Company - practical AI systems for real work](./assets/little-ai-company-hero.svg)
+[![The Little AI Company - practical AI systems for real work](./assets/little-ai-company-hero.svg)](https://littleaicompany.com)
 
 # The Little AI Company
 
