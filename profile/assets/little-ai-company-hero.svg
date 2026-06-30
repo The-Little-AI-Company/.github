@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">The Little AI Company organization hero</title>
+  <desc id="desc">Practical AI systems for real work.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12100b"/>
+      <stop offset="0.5" stop-color="#1f1b13"/>
+      <stop offset="1" stop-color="#23321f"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fde68a"/>
+      <stop offset="0.48" stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#bef264"/>
+      <stop offset="1" stop-color="#22c55e"/>
+    </linearGradient>
+    <pattern id="paper" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M 64 0 L 0 0 0 64" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+      <circle cx="44" cy="18" r="2" fill="#ffffff" opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="640" rx="34" fill="url(#bg)"/>
+  <rect width="1280" height="640" rx="34" fill="url(#paper)"/>
+  <path d="M 0 430 L 310 430 L 420 640 L 0 640 Z" fill="#f97316" opacity="0.94"/>
+  <path d="M 240 640 L 520 235 L 776 640 Z" fill="#facc15" opacity="0.93"/>
+  <path d="M 676 640 L 952 322 L 1280 640 Z" fill="#22c55e" opacity="0.82"/>
+  <rect x="860" y="104" width="276" height="276" rx="52" fill="#0f172a" stroke="#ffffff" stroke-opacity="0.13" stroke-width="2"/>
+  <path d="M 928 272 C 932 196 984 158 1046 174 C 1102 188 1125 252 1082 304 C 1044 350 960 342 928 272 Z" fill="url(#warm)" opacity="0.96"/>
+  <path d="M 932 274 C 984 226 1032 218 1088 246" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+  <path d="M 920 178 C 886 134 886 102 918 76 C 959 101 966 137 940 184 Z" fill="url(#leaf)"/>
+  <text x="82" y="126" fill="#fbbf24" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="3">THE LITTLE AI COMPANY</text>
+  <text x="80" y="220" fill="#f9fafb" font-family="Segoe UI, Arial, sans-serif" font-size="70" font-weight="850">Practical AI systems</text>
+  <text x="84" y="294" fill="#e5e7eb" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="650">for real work</text>
+  <text x="86" y="372" fill="#d6d3d1" font-family="Segoe UI, Arial, sans-serif" font-size="28">Tools, guides, workflows, and implementation help for people who need AI to be useful.</text>
+  <g transform="translate(86 456)">
+    <rect width="188" height="46" rx="23" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="25" y="31" fill="#f9fafb" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="750">Zo resources</text>
+  </g>
+  <g transform="translate(298 456)">
+    <rect width="190" height="46" rx="23" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="25" y="31" fill="#f9fafb" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="750">Agent Relay</text>
+  </g>
+  <g transform="translate(512 456)">
+    <rect width="204" height="46" rx="23" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="25" y="31" fill="#f9fafb" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="750">Small teams</text>
+  </g>
+</svg>
