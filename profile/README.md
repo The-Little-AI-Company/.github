@@ -6,6 +6,9 @@ The Little AI Company builds practical AI resources, workflows, and tools for pe
 
 We care less about hype and more about usable systems: clear guides, repeatable workflows, reliable handoffs, and tools that make complicated work easier to run.
 
+The company owl, downloadable marks, and usage guidance live in the
+[organization brand kit](../brand/BRAND.md).
+
 ## Start Here
 
 | Link | What to look for |
