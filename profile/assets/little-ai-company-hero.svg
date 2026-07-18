@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
   <title id="title">The Little AI Company</title>
-  <desc id="desc">Practical AI systems for real work.</desc>
+  <desc id="desc">Useful software for real AI work.</desc>
   <rect width="1280" height="640" rx="34" fill="#F3EBDD"/>
   <rect x="54" y="54" width="1172" height="532" rx="32" fill="#FFFDF8"/>
   <rect x="54" y="54" width="18" height="532" fill="#B85C38"/>

@@ -1,28 +1,30 @@
-[![The Little AI Company - practical AI systems for real work](./assets/little-ai-company-hero.svg)](https://littleaicompany.com)
+[![The Little AI Company — useful software for real AI work](./assets/little-ai-company-hero.svg)](https://littleaicompany.com)
 
 # The Little AI Company
 
-The Little AI Company builds practical AI resources, workflows, and tools for people who need AI to help with real work.
+The Little AI Company is an independent software studio. We make small,
+practical tools for memory, handoffs, and trustworthy AI work.
 
-We care less about hype and more about usable systems: clear guides, repeatable workflows, reliable handoffs, and tools that make complicated work easier to run.
+We publish the code, the limits, the receipts, and what we learn while building.
+Useful before impressive.
 
 The company owl, downloadable marks, and usage guidance live in the
 [organization brand kit](../brand/BRAND.md).
 
-## Start Here
+## What We're Building
 
-| Link | What to look for |
+| Project | What it does |
 | --- | --- |
-| [**Website**](https://littleaicompany.com) | Public company surface and current positioning. |
-| [**Zo Computer 101**](https://github.com/The-Little-AI-Company/zo-computer-101) | Searchable field-guide site for learning and using Zo Computer. |
-| [**Zo Computer 101 Guides**](https://github.com/The-Little-AI-Company/zo-computer-101-guides) | Markdown guide library behind the Zo Computer 101 site. |
-| [**Zo Cookbook**](https://github.com/The-Little-AI-Company/zo-cookbook-app) | App, space, automation, and prompt recipes for Zo Computer users. |
-| [**Open Work Relay**](https://github.com/The-Little-AI-Company/open-work-relay) | Open handoff protocol for moving work across AI agents, queues, and people. |
+| [**Bellamente**](https://github.com/The-Little-AI-Company/bellamente) | Local-first, inspectable long-term memory for AI agents. |
+| [**Agent Relay**](https://github.com/The-Little-AI-Company/open-work-relay) | A visible handoff layer for people and AI agents. |
+| [**The Little AI Company website**](https://littleaicompany.com) | The front door for our products, releases, and build notes. |
 
-## What We Build
+## Learn From the Work
 
-- Beginner-friendly AI guides and learning resources.
-- Practical workflows for small teams, operators, and solo builders.
-- Agent handoff and coordination patterns.
-- Proof-first public tools and documentation.
-- Systems that make AI useful without making people learn a pile of jargon first.
+The software comes first. We also publish plain-English material drawn from the
+work: practical guides for using AI, checking its output, protecting private
+information, and turning useful results into repeatable workflows.
+
+- [AI Starter Kit](https://littleaicompany.com/guides)
+- [Zo Computer 101](https://github.com/The-Little-AI-Company/zo-computer-101)
+- [Zo Cookbook](https://github.com/The-Little-AI-Company/zo-cookbook-app)
