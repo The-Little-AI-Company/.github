@@ -8,8 +8,9 @@ personality without turning the products into toys.
 
 - **Primary mark:** the owl head. Use it for the GitHub organization avatar,
   favicon, site header, footer, and other small placements.
-- **Mascot:** the full owl figure. Use a pose only when it supports the
-  surrounding message.
+- **Mascot:** the full owl figure. The reusable library includes welcome,
+  checking, writing, memory, coffee, building, filing, relay, and teaching
+  poses. Use a pose only when it supports the surrounding message.
 - **Name:** always write `The Little AI Company`.
 - **Public story:** this is simply the Little AI Company owl. Describe it through
   its role here and the traits in this guide.

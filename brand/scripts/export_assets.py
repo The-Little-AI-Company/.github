@@ -32,7 +32,17 @@ SIGNAL = "#205F5D"
 MUTED = "#6E6456"
 CHARCOAL = "#201A15"
 
-POSES = ("welcome", "checking", "writing", "memory", "coffee")
+POSES = (
+    "welcome",
+    "checking",
+    "writing",
+    "memory",
+    "coffee",
+    "building",
+    "filing",
+    "relay",
+    "teaching",
+)
 MARK_SIZES = (16, 20, 32, 40, 64, 128, 200, 256, 512, 1024)
 
 
@@ -649,16 +659,23 @@ def save_proofs(
         x += 295
     mark_sheet.save(PROOFS / "tlac-mark-proof-sheet.png", optimize=True)
 
-    pose_sheet = Image.new("RGB", (2000, 760), PAPER)
+    pose_sheet = Image.new("RGB", (2000, 1460), PAPER)
     draw = ImageDraw.Draw(pose_sheet)
     draw.text((70, 45), "TLAC owl pose proof", font=heading, fill=INK)
-    x = 50
-    for pose in POSES:
+    for index, pose in enumerate(POSES):
+        column = index % 5
+        row = index // 5
+        x = 50 + column * 390
+        y = 150 + row * 650
         icon = resized(mascots[pose], 350)
-        pose_sheet.paste(icon, (x, 170), icon)
+        pose_sheet.paste(icon, (x, y), icon)
         box = draw.textbbox((0, 0), pose, font=label)
-        draw.text((x + (350 - (box[2] - box[0])) / 2, 555), pose, font=label, fill=INK)
-        x += 390
+        draw.text(
+            (x + (350 - (box[2] - box[0])) / 2, y + 385),
+            pose,
+            font=label,
+            fill=INK,
+        )
     pose_sheet.save(PROOFS / "tlac-mascot-pose-sheet.png", optimize=True)
 
     lockup_sheet = Image.new("RGB", (1600, 1200), PAPER)
@@ -674,10 +691,10 @@ def save_proofs(
     lockup_sheet.paste(compact_preview.convert("RGB").resize((560, 560)), (520, 590))
     lockup_sheet.save(PROOFS / "tlac-lockup-proof-sheet.png", optimize=True)
 
-    combined = Image.new("RGB", (2200, 1100), PAPER)
+    combined = Image.new("RGB", (2200, 1500), PAPER)
     combined.paste(mark_sheet.resize((1540, 1050)), (0, 25))
-    combined.paste(pose_sheet.resize((650, 247)), (1540, 110))
-    combined.paste(lockup_sheet.resize((650, 488)), (1540, 400))
+    combined.paste(pose_sheet.resize((650, 475)), (1540, 70))
+    combined.paste(lockup_sheet.resize((650, 488)), (1540, 600))
     combined.save(PROOFS / "tlac-brand-proof-sheet.png", optimize=True)
 
 

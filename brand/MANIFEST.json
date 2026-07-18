@@ -23,6 +23,11 @@
       "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
     },
     {
+      "path": "source/poses/tlac-owl-building.svg",
+      "bytes": 564823,
+      "sha256": "0f1e2a2b736cc395feb33964120c242460e0d8b7daadeedc72b51f48cb3c1abb"
+    },
+    {
       "path": "source/poses/tlac-owl-checking.svg",
       "bytes": 227674,
       "sha256": "9b06d3c46eb158cf1dbbfc1f51d9a150fc5f8a4a4f19121a0c6525c5afb60ef6"
@@ -33,9 +38,24 @@
       "sha256": "62c5b0716b8508ab309f58309c8925b425686ef5e65345edb41f83471f3f3717"
     },
     {
+      "path": "source/poses/tlac-owl-filing.svg",
+      "bytes": 479413,
+      "sha256": "f09ce4650e505021048e2c49dbce8c62eebee4c8ae41eb51fca11b7ac121034d"
+    },
+    {
       "path": "source/poses/tlac-owl-memory.svg",
       "bytes": 370425,
       "sha256": "0905a650b066afc579ddb6462c6c150a8703ee71626340f0f4bfff49ca997ab8"
+    },
+    {
+      "path": "source/poses/tlac-owl-relay.svg",
+      "bytes": 417538,
+      "sha256": "425edcb980cab50cf9be7963dee680fc1e7d3756edad2d99cef32e30d537e0b0"
+    },
+    {
+      "path": "source/poses/tlac-owl-teaching.svg",
+      "bytes": 540875,
+      "sha256": "05aff5813c5cb0accb105e0aa08d82aae79de15b79a782a9855a098ac2398a0a"
     },
     {
       "path": "source/poses/tlac-owl-welcome.svg",
@@ -53,6 +73,11 @@
       "sha256": "bb87a45bbacc2b5c711e740ec229c57ec04e0a639f0733d36d61fd92c90f63e6"
     },
     {
+      "path": "source/raster/tlac-owl-building-master.png",
+      "bytes": 1125633,
+      "sha256": "035562a964f76e0f7e4bf6a9b0e95b628709ab1aa65aa039e699664bbe584b05"
+    },
+    {
       "path": "source/raster/tlac-owl-checking-master.png",
       "bytes": 689435,
       "sha256": "d1dce6205b614f2149cae57f6ea47f72c3aebfe3c0cb05eb33cfd59a9a4b8128"
@@ -63,6 +88,11 @@
       "sha256": "06799ccb7dfb95a896107716e732208f90c1a2c9cd0646f8a66465c409ae9894"
     },
     {
+      "path": "source/raster/tlac-owl-filing-master.png",
+      "bytes": 871471,
+      "sha256": "287a590bf2c15fdca13b1c4cb8a1ca04982fd30fc47392b89b5572d647365f33"
+    },
+    {
       "path": "source/raster/tlac-owl-mark-master.png",
       "bytes": 675014,
       "sha256": "0659ca3045add0f91fa2268b8691fa14ca15a66dbd5127a439c3d8ca10b9b2d2"
@@ -71,6 +101,16 @@
       "path": "source/raster/tlac-owl-memory-master.png",
       "bytes": 931673,
       "sha256": "be9c3a99788ee0a308d6b40170ea9a7b76f72c43c4750c0ab67ca7162d576d63"
+    },
+    {
+      "path": "source/raster/tlac-owl-relay-master.png",
+      "bytes": 877671,
+      "sha256": "e37362fbc464f52ca5345cff7653f9dad5186316023438ddbd72bbd18182b7e9"
+    },
+    {
+      "path": "source/raster/tlac-owl-teaching-master.png",
+      "bytes": 1175892,
+      "sha256": "9f1e0b437f58aa36bd40e9a561bcde14662660c923c462e9e7d46aca3e1667bb"
     },
     {
       "path": "source/raster/tlac-owl-welcome-master.png",
@@ -418,6 +458,21 @@
       "sha256": "339dec5cda38d11402838b7c4272dfe77eea8e1a1d19f5398e0cd9be454a18b1"
     },
     {
+      "path": "dist/mascot/tlac-owl-building-1024.webp",
+      "bytes": 450722,
+      "sha256": "8ddfbaa07187ea8b1728579868e9e20d02dc8c998f816a7b07f3cab26d5e778d"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-building-320.webp",
+      "bytes": 55816,
+      "sha256": "4fbe27e2e35f987ed38290d5d9285b62d24cf93e94410983b806691bbd9df1e9"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-building-640.webp",
+      "bytes": 185566,
+      "sha256": "5eaebf053f826a95f1194b25d57ef17eba1c23c8b35c8dba42f4bbeaa581dc3d"
+    },
+    {
       "path": "dist/mascot/tlac-owl-checking-1024.webp",
       "bytes": 322662,
       "sha256": "825ba88a7ee5ef8ae4eb3efdfa13be81ceb8239c60ea3812c16ca1270abff9bc"
@@ -448,6 +503,21 @@
       "sha256": "a3c352e1f742458c17112ecdc8ab21d82e500944398e1bca510d22e7cecb2f76"
     },
     {
+      "path": "dist/mascot/tlac-owl-filing-1024.webp",
+      "bytes": 397140,
+      "sha256": "2f01926033d7275bc9d4d72cbd846d688adbc88e042f2065a03c3783bc7c6815"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-filing-320.webp",
+      "bytes": 50826,
+      "sha256": "cb9645f5480f47597bee3a4c451bd660069a0ddd782a4495e755a63737a60563"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-filing-640.webp",
+      "bytes": 168224,
+      "sha256": "68822e8aa8583f2a8ca0f965c83f5767874cf0d46d450d0d398b7e2f06de97aa"
+    },
+    {
       "path": "dist/mascot/tlac-owl-memory-1024.webp",
       "bytes": 429322,
       "sha256": "2ff601b0d16fdc62f4136bf7311c2143d0b79af4e46c3bccc136e5d646374764"
@@ -461,6 +531,36 @@
       "path": "dist/mascot/tlac-owl-memory-640.webp",
       "bytes": 182462,
       "sha256": "bca8619b919ad15d90b374525c0679f7a5f2a2758553884572ccc703d2e93806"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-relay-1024.webp",
+      "bytes": 407592,
+      "sha256": "757d793b3fe7a72b19f7c7e0cdacf0001d1cf79aa9c519974efceabb5e2c5b7b"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-relay-320.webp",
+      "bytes": 54070,
+      "sha256": "98d515a2d9488001906ac2115a952fad712bcc3e63389a4792c5ce18248b81b4"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-relay-640.webp",
+      "bytes": 175162,
+      "sha256": "20eeeaa051b45ec7f5d6dca999f97a893127aeaf98dae2858981b18f8ad51c62"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-teaching-1024.webp",
+      "bytes": 589042,
+      "sha256": "2eed963e0f5b4404f41649c993a0654a6b00b504e7fa6a11cdf9cc1894171f6a"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-teaching-320.webp",
+      "bytes": 68788,
+      "sha256": "8a581305f2bb15fe94b30a9c9bd71f44d3df022ed80c839c07b8865370a32703"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-teaching-640.webp",
+      "bytes": 240230,
+      "sha256": "5424d811174d7050c7f2867eb9b75671ce52bc996c57a3bc963c607403f41e6c"
     },
     {
       "path": "dist/mascot/tlac-owl-welcome-1024.webp",
@@ -539,8 +639,8 @@
     },
     {
       "path": "proofs/tlac-brand-proof-sheet.png",
-      "bytes": 538045,
-      "sha256": "5ad1cbc486c56a9925c0f514eae8214fd9cfd6413f015b1161c981a89e1f29ec"
+      "bytes": 591476,
+      "sha256": "5cdce1ac10f29e6b6ff2f080c81047c8e25f38bd0892516747a0510618d67547"
     },
     {
       "path": "proofs/tlac-lockup-proof-sheet.png",
@@ -554,8 +654,8 @@
     },
     {
       "path": "proofs/tlac-mascot-pose-sheet.png",
-      "bytes": 367651,
-      "sha256": "2e27aea3f263c06fc8d201285844d6953ad9cc946355682ce0368ab4072fffed"
+      "bytes": 710453,
+      "sha256": "8e3a50422ec051bf09647ba776668edbe97b4097ceba900b7b02550dbb589562"
     },
     {
       "path": "proofs/vector-variant-preview.html",
