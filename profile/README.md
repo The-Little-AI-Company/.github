@@ -8,9 +8,6 @@ practical tools for memory, handoffs, and trustworthy AI work.
 We publish the code, the limits, the receipts, and what we learn while building.
 Useful before impressive.
 
-The company owl, downloadable marks, and usage guidance live in the
-[organization brand kit](../brand/BRAND.md).
-
 ## What We're Building
 
 | Project | What it does |

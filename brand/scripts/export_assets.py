@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import shutil
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -31,17 +32,27 @@ TEAL = "#2D7A78"
 SIGNAL = "#205F5D"
 MUTED = "#6E6456"
 CHARCOAL = "#201A15"
+SVG_NS = "http://www.w3.org/2000/svg"
 
 POSES = (
     "welcome",
-    "checking",
-    "writing",
-    "memory",
     "coffee",
+    "celebrating",
     "building",
-    "filing",
-    "relay",
+    "planning",
+    "debugging",
+    "testing",
+    "writing",
+    "research",
     "teaching",
+    "presenting",
+    "checking",
+    "protecting",
+    "filing",
+    "memory",
+    "relay",
+    "connecting",
+    "shipping",
 )
 MARK_SIZES = (16, 20, 32, 40, 64, 128, 200, 256, 512, 1024)
 
@@ -75,6 +86,16 @@ def trimmed_square(image: Image.Image, padding_ratio: float = 0.1) -> Image.Imag
         ((edge - cropped.width) // 2, (edge - cropped.height) // 2),
     )
     return canvas
+
+
+def require_safe_area(image: Image.Image, ratio: float, label: str) -> None:
+    bbox = image.getchannel("A").getbbox()
+    if bbox is None:
+        raise ValueError(f"{label} has no visible alpha bounds")
+    left, top, right, bottom = bbox
+    clearance = min(left, top, image.width - right, image.height - bottom)
+    if clearance / max(image.size) < ratio:
+        raise ValueError(f"{label} does not preserve a {ratio:.0%} safe area")
 
 
 def resized(image: Image.Image, size: int) -> Image.Image:
@@ -190,12 +211,21 @@ def trace_svg(
     output: Path,
     *,
     size: int,
+    title: str,
     color_mode: str = "color",
     color_precision: int = 6,
     speckle: int = 8,
     matte: str = PAPER,
 ) -> str:
     traced = resized(image, size)
+    corners = (
+        (0, 0),
+        (traced.width - 1, 0),
+        (0, traced.height - 1),
+        (traced.width - 1, traced.height - 1),
+    )
+    if any(traced.getpixel(point)[3] != 0 for point in corners):
+        raise ValueError(f"{output} does not have transparent corners")
     WORKING.mkdir(parents=True, exist_ok=True)
     key = tuple(int(matte[index : index + 2], 16) for index in (1, 3, 5))
     trace_input = Image.new("RGB", traced.size, key)
@@ -214,6 +244,7 @@ def trace_svg(
     root.attrib.pop("height", None)
     root.set("viewBox", f"0 0 {size} {size}")
     root.set("role", "img")
+    root.set("aria-labelledby", "title")
 
     first = list(root)[0]
     fill = first.attrib.get("fill", "")
@@ -223,7 +254,10 @@ def trace_svg(
     if max(abs(left - right) for left, right in zip(key, traced_key)) > 20:
         raise ValueError(f"{raw_output} matte color drifted to {fill}")
     root.remove(first)
-    ET.register_namespace("", "http://www.w3.org/2000/svg")
+    title_element = ET.Element(f"{{{SVG_NS}}}title", {"id": "title"})
+    title_element.text = title
+    root.insert(0, title_element)
+    ET.register_namespace("", SVG_NS)
     svg = ET.tostring(root, encoding="unicode", xml_declaration=True)
     output.parent.mkdir(parents=True, exist_ok=True)
     write_text_lf(output, svg)
@@ -232,7 +266,8 @@ def trace_svg(
 
 def svg_inner(svg: str) -> str:
     start = svg.index(">", svg.index("<svg")) + 1
-    return svg[start : svg.rindex("</svg>")].strip()
+    inner = svg[start : svg.rindex("</svg>")].strip()
+    return re.sub(r"^<title\b[^>]*>.*?</title>\s*", "", inner, count=1, flags=re.S)
 
 
 def save_vector_sources(mark: Image.Image, mascots: dict[str, Image.Image]) -> dict[str, str]:
@@ -244,12 +279,14 @@ def save_vector_sources(mark: Image.Image, mascots: dict[str, Image.Image]) -> d
             mark,
             VECTOR_SOURCE / "tlac-owl-mark.svg",
             size=512,
+            title="Hollis, the Little AI Company owl mark",
             matte=PAPER,
         ),
         "one_color": trace_svg(
             one_color_raster(mark, INK),
             VECTOR_SOURCE / "tlac-owl-mark-one-color.svg",
             size=512,
+            title="One-color Hollis owl mark for The Little AI Company",
             color_precision=8,
             speckle=5,
             matte=SURFACE,
@@ -258,6 +295,7 @@ def save_vector_sources(mark: Image.Image, mascots: dict[str, Image.Image]) -> d
             one_color_raster(mark, PAPER),
             VECTOR_SOURCE / "tlac-owl-mark-reversed.svg",
             size=512,
+            title="Reversed Hollis owl mark for The Little AI Company",
             color_precision=8,
             speckle=5,
             matte=CHARCOAL,
@@ -266,6 +304,7 @@ def save_vector_sources(mark: Image.Image, mascots: dict[str, Image.Image]) -> d
             grayscale_raster(mark),
             VECTOR_SOURCE / "tlac-owl-mark-grayscale.svg",
             size=512,
+            title="Grayscale Hollis owl mark for The Little AI Company",
             color_precision=5,
             matte=PAPER,
         ),
@@ -273,6 +312,7 @@ def save_vector_sources(mark: Image.Image, mascots: dict[str, Image.Image]) -> d
             silhouette_raster(mark),
             VECTOR_SOURCE / "tlac-owl-mark-silhouette.svg",
             size=512,
+            title="Hollis owl silhouette for The Little AI Company",
             color_precision=8,
             speckle=5,
             matte=SURFACE,
@@ -284,6 +324,7 @@ def save_vector_sources(mark: Image.Image, mascots: dict[str, Image.Image]) -> d
             image,
             POSE_SOURCE / f"tlac-owl-{pose}.svg",
             size=512,
+            title=f"Hollis, the Little AI Company owl: {pose.replace('-', ' ')}",
             color_precision=5,
             speckle=12,
             matte=PAPER,
@@ -383,7 +424,7 @@ def save_profile_hero(mark_svg: str) -> None:
         letter_spacing=2,
     )
     headline_top = outlined_text(
-        "Practical AI systems",
+        "Useful software",
         family="fraunces",
         weight=900,
         size=64,
@@ -392,7 +433,7 @@ def save_profile_hero(mark_svg: str) -> None:
         fill=INK,
     )
     headline_bottom = outlined_text(
-        "for real work.",
+        "for real AI work.",
         family="fraunces",
         weight=900,
         size=64,
@@ -401,7 +442,7 @@ def save_profile_hero(mark_svg: str) -> None:
         fill=INK,
     )
     subhead = outlined_text(
-        "Useful tools, clear guides, and reliable workflows.",
+        "Small tools for memory, handoffs, and trustworthy work.",
         family="inter",
         weight=400,
         size=27,
@@ -412,7 +453,7 @@ def save_profile_hero(mark_svg: str) -> None:
     hero = f"""<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
   <title id="title">The Little AI Company</title>
-  <desc id="desc">Practical AI systems for real work.</desc>
+  <desc id="desc">Useful software for real AI work.</desc>
   <rect width="1280" height="640" rx="34" fill="{PAPER}"/>
   <rect x="54" y="54" width="1172" height="532" rx="32" fill="{SURFACE}"/>
   <rect x="54" y="54" width="18" height="532" fill="{RUST}"/>
@@ -489,10 +530,13 @@ def save_mascots() -> dict[str, Image.Image]:
     target.mkdir(parents=True, exist_ok=True)
     masters: dict[str, Image.Image] = {}
     for pose in POSES:
-        master = trimmed_square(load_master(pose), padding_ratio=0.075)
+        master = trimmed_square(load_master(pose), padding_ratio=0.12)
+        require_safe_area(master, 0.08, pose)
         masters[pose] = master
         for size in (320, 640, 1024):
-            resized(master, size).save(
+            derivative = resized(master, size)
+            require_safe_area(derivative, 0.08, f"{pose}-{size}")
+            derivative.save(
                 target / f"tlac-owl-{pose}-{size}.webp",
                 format="WEBP",
                 lossless=True,
@@ -545,19 +589,19 @@ def save_social(mark: Image.Image, mascot: Image.Image) -> None:
     )
     draw.text(
         (108, 205),
-        "Practical AI systems",
+        "Useful software",
         font=brand_font(64, family="fraunces", weight="Black"),
         fill=INK,
     )
     draw.text(
         (112, 286),
-        "for real work.",
+        "for real AI work.",
         font=brand_font(64, family="fraunces", weight="Black"),
         fill=INK,
     )
     draw.text(
         (112, 402),
-        "Useful tools, clear guides, and reliable workflows.",
+        "Small tools for memory, handoffs, and trustworthy work.",
         font=brand_font(27),
         fill=MUTED,
     )
@@ -576,7 +620,7 @@ def save_social(mark: Image.Image, mascot: Image.Image) -> None:
         draw.text(((1080 - (box[2] - box[0])) / 2, y), text, font=display, fill=INK)
     draw.text(
         (300, 875),
-        "PRACTICAL AI FOR REAL WORK",
+        "USEFUL SOFTWARE FOR REAL AI WORK",
         font=brand_font(24, weight="Bold"),
         fill=SIGNAL,
     )
@@ -659,7 +703,8 @@ def save_proofs(
         x += 295
     mark_sheet.save(PROOFS / "tlac-mark-proof-sheet.png", optimize=True)
 
-    pose_sheet = Image.new("RGB", (2000, 1460), PAPER)
+    pose_rows = (len(POSES) + 4) // 5
+    pose_sheet = Image.new("RGB", (2000, 160 + pose_rows * 650), PAPER)
     draw = ImageDraw.Draw(pose_sheet)
     draw.text((70, 45), "TLAC owl pose proof", font=heading, fill=INK)
     for index, pose in enumerate(POSES):
@@ -716,7 +761,7 @@ def save_manifest() -> None:
         BRAND / "MANIFEST.json",
         json.dumps(
             {
-                "name": "The Little AI Company owl brand kit",
+                "name": "The Little AI Company owl illustration library",
                 "exporter": "brand/scripts/export_assets.py",
                 "files": files,
             },
@@ -724,6 +769,37 @@ def save_manifest() -> None:
         )
         + "\n",
     )
+
+
+def verify_manifest() -> None:
+    manifest_path = BRAND / "MANIFEST.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    entries = manifest.get("files", [])
+    paths = [entry.get("path") for entry in entries]
+    if len(paths) != len(set(paths)):
+        raise ValueError(f"{manifest_path} contains duplicate paths")
+
+    actual_paths = {
+        path.relative_to(BRAND).as_posix()
+        for base in (VECTOR_SOURCE, DIST, PROOFS)
+        for path in base.rglob("*")
+        if path.is_file() and path.name != "MANIFEST.json"
+    }
+    if set(paths) != actual_paths:
+        missing = sorted(actual_paths - set(paths))
+        stale = sorted(set(paths) - actual_paths)
+        raise ValueError(
+            f"{manifest_path} does not match exported files; "
+            f"missing={missing}, stale={stale}"
+        )
+
+    for entry in entries:
+        path = BRAND / entry["path"]
+        data = path.read_bytes()
+        if entry.get("bytes") != len(data):
+            raise ValueError(f"{manifest_path} has the wrong size for {path}")
+        if entry.get("sha256") != hashlib.sha256(data).hexdigest():
+            raise ValueError(f"{manifest_path} has the wrong hash for {path}")
 
 
 def verify_outputs() -> None:
@@ -740,9 +816,56 @@ def verify_outputs() -> None:
     )
     for path in (*required_svg, *sorted(POSE_SOURCE.glob("*.svg"))):
         text = path.read_text(encoding="utf-8")
-        if "<image" in text or "data:" in text:
-            raise ValueError(f"{path} contains an embedded payload")
-        ET.fromstring(text)
+        root = ET.fromstring(text)
+        if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*\.svg", path.name):
+            raise ValueError(f"{path} does not use a lowercase kebab-case filename")
+        if "viewBox" not in root.attrib:
+            raise ValueError(f"{path} has no viewBox")
+        if "width" in root.attrib or "height" in root.attrib:
+            raise ValueError(f"{path} has fixed root dimensions")
+        if root.attrib.get("role") != "img":
+            raise ValueError(f"{path} has no image role")
+
+        ids: list[str] = []
+        titles: dict[str, str] = {}
+        forbidden_tags = {
+            "animate",
+            "animateMotion",
+            "animateTransform",
+            "clipPath",
+            "filter",
+            "foreignObject",
+            "image",
+            "mask",
+            "script",
+            "set",
+            "text",
+        }
+        for element in root.iter():
+            tag = element.tag.rsplit("}", 1)[-1]
+            if tag in forbidden_tags:
+                raise ValueError(f"{path} contains forbidden <{tag}> markup")
+            element_id = element.attrib.get("id")
+            if element_id:
+                ids.append(element_id)
+                if tag == "title":
+                    titles[element_id] = (element.text or "").strip()
+            for attribute, value in element.attrib.items():
+                local_attribute = attribute.rsplit("}", 1)[-1]
+                normalized = value.strip().lower()
+                if local_attribute in {"filter", "mask", "clip-path"}:
+                    raise ValueError(f"{path} uses {local_attribute}")
+                if local_attribute == "href" and not value.strip().startswith("#"):
+                    raise ValueError(f"{path} uses an external reference")
+                if "data:" in normalized or "javascript:" in normalized:
+                    raise ValueError(f"{path} contains an embedded payload")
+                if "url(http" in normalized or "url(//" in normalized:
+                    raise ValueError(f"{path} contains an external URL")
+        if len(ids) != len(set(ids)):
+            raise ValueError(f"{path} contains duplicate IDs")
+        label_id = root.attrib.get("aria-labelledby")
+        if not label_id or not titles.get(label_id):
+            raise ValueError(f"{path} has no accessible title")
     for path in (
         VECTOR_SOURCE / "tlac-owl-lockup-horizontal.svg",
         VECTOR_SOURCE / "tlac-owl-lockup-compact.svg",
@@ -789,6 +912,7 @@ def main() -> None:
     )
     verify_outputs()
     save_manifest()
+    verify_manifest()
     print(f"Exported and verified TLAC brand assets at {BRAND}")
 
 

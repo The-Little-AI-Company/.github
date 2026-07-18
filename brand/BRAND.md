@@ -1,6 +1,6 @@
 # The Little AI Company brand
 
-The Little AI Company owl is calm, quietly wise, mildly skeptical, warm, and
+Hollis, the Little AI Company owl, is calm, quietly wise, mildly skeptical, warm, and
 competent when it counts. It gives the company a recognizable human-scale
 personality without turning the products into toys.
 
@@ -9,11 +9,14 @@ personality without turning the products into toys.
 - **Primary mark:** the owl head. Use it for the GitHub organization avatar,
   favicon, site header, footer, and other small placements.
 - **Mascot:** the full owl figure. The reusable library includes welcome,
-  checking, writing, memory, coffee, building, filing, relay, and teaching
-  poses. Use a pose only when it supports the surrounding message.
-- **Name:** always write `The Little AI Company`.
-- **Public story:** this is simply the Little AI Company owl. Describe it through
-  its role here and the traits in this guide.
+  coffee, celebrating, building, planning, debugging, testing, writing,
+  research, teaching, presenting, checking, protecting, filing, memory, relay,
+  connecting, and shipping poses. Use a pose only when it supports the
+  surrounding message.
+- **Character name:** `Hollis`, or `Hollis, the Little AI Company owl` on first
+  mention.
+- **Company name:** always write `The Little AI Company`.
+- **Public story and voice:** follow `CHARACTER.md`.
 
 ## Personality guardrails
 
@@ -51,6 +54,9 @@ Use the existing TLAC pairing:
 
 ## Asset map
 
+- `DESIGN.md` is the governing visual-system and SVG production specification.
+- `CHARACTER.md` is the governing story, voice, and release-announcement
+  specification.
 - `source/tlac-owl-mark.svg` is the full-color vector mark.
 - `source/tlac-owl-mark-one-color.svg`, `-reversed.svg`, `-grayscale.svg`, and
   `-silhouette.svg` are the required mark variants.
@@ -69,7 +75,8 @@ Use the existing TLAC pairing:
 - `dist/social/` contains the Open Graph card and social square.
 - `proofs/` contains review sheets, not production assets.
 - `archive/` contains the pre-rollout organization avatar for rollback.
-- `MANIFEST.json` records file sizes and SHA-256 hashes for the generated kit.
+- `MANIFEST.json` records file sizes and SHA-256 hashes for the generated
+  illustration library.
 
 To rebuild from a clean checkout:
 
