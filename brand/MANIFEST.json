@@ -1,0 +1,666 @@
+{
+  "name": "The Little AI Company owl brand kit",
+  "exporter": "brand/scripts/export_assets.py",
+  "files": [
+    {
+      "path": "source/fonts/fraunces/Fraunces.ttf",
+      "bytes": 360440,
+      "sha256": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb"
+    },
+    {
+      "path": "source/fonts/fraunces/OFL.txt",
+      "bytes": 4391,
+      "sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b"
+    },
+    {
+      "path": "source/fonts/inter/Inter.ttf",
+      "bytes": 876576,
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+    },
+    {
+      "path": "source/fonts/inter/OFL.txt",
+      "bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "path": "source/poses/tlac-owl-building.svg",
+      "bytes": 564823,
+      "sha256": "0f1e2a2b736cc395feb33964120c242460e0d8b7daadeedc72b51f48cb3c1abb"
+    },
+    {
+      "path": "source/poses/tlac-owl-checking.svg",
+      "bytes": 227674,
+      "sha256": "9b06d3c46eb158cf1dbbfc1f51d9a150fc5f8a4a4f19121a0c6525c5afb60ef6"
+    },
+    {
+      "path": "source/poses/tlac-owl-coffee.svg",
+      "bytes": 276164,
+      "sha256": "62c5b0716b8508ab309f58309c8925b425686ef5e65345edb41f83471f3f3717"
+    },
+    {
+      "path": "source/poses/tlac-owl-filing.svg",
+      "bytes": 479413,
+      "sha256": "f09ce4650e505021048e2c49dbce8c62eebee4c8ae41eb51fca11b7ac121034d"
+    },
+    {
+      "path": "source/poses/tlac-owl-memory.svg",
+      "bytes": 370425,
+      "sha256": "0905a650b066afc579ddb6462c6c150a8703ee71626340f0f4bfff49ca997ab8"
+    },
+    {
+      "path": "source/poses/tlac-owl-relay.svg",
+      "bytes": 417538,
+      "sha256": "425edcb980cab50cf9be7963dee680fc1e7d3756edad2d99cef32e30d537e0b0"
+    },
+    {
+      "path": "source/poses/tlac-owl-teaching.svg",
+      "bytes": 540875,
+      "sha256": "05aff5813c5cb0accb105e0aa08d82aae79de15b79a782a9855a098ac2398a0a"
+    },
+    {
+      "path": "source/poses/tlac-owl-welcome.svg",
+      "bytes": 258587,
+      "sha256": "2ae11776430362d6d9ae802be95f882fe292d5324b7c1231ecc1ed0b33395e69"
+    },
+    {
+      "path": "source/poses/tlac-owl-writing.svg",
+      "bytes": 356463,
+      "sha256": "e6b075c4e2914d982c0e8b52ffcd9cf6f6f15b5f7be4fa558b17959fe053976b"
+    },
+    {
+      "path": "source/PROVENANCE.md",
+      "bytes": 570,
+      "sha256": "bb87a45bbacc2b5c711e740ec229c57ec04e0a639f0733d36d61fd92c90f63e6"
+    },
+    {
+      "path": "source/raster/tlac-owl-building-master.png",
+      "bytes": 1125633,
+      "sha256": "035562a964f76e0f7e4bf6a9b0e95b628709ab1aa65aa039e699664bbe584b05"
+    },
+    {
+      "path": "source/raster/tlac-owl-checking-master.png",
+      "bytes": 689435,
+      "sha256": "d1dce6205b614f2149cae57f6ea47f72c3aebfe3c0cb05eb33cfd59a9a4b8128"
+    },
+    {
+      "path": "source/raster/tlac-owl-coffee-master.png",
+      "bytes": 692331,
+      "sha256": "06799ccb7dfb95a896107716e732208f90c1a2c9cd0646f8a66465c409ae9894"
+    },
+    {
+      "path": "source/raster/tlac-owl-filing-master.png",
+      "bytes": 871471,
+      "sha256": "287a590bf2c15fdca13b1c4cb8a1ca04982fd30fc47392b89b5572d647365f33"
+    },
+    {
+      "path": "source/raster/tlac-owl-mark-master.png",
+      "bytes": 675014,
+      "sha256": "0659ca3045add0f91fa2268b8691fa14ca15a66dbd5127a439c3d8ca10b9b2d2"
+    },
+    {
+      "path": "source/raster/tlac-owl-memory-master.png",
+      "bytes": 931673,
+      "sha256": "be9c3a99788ee0a308d6b40170ea9a7b76f72c43c4750c0ab67ca7162d576d63"
+    },
+    {
+      "path": "source/raster/tlac-owl-relay-master.png",
+      "bytes": 877671,
+      "sha256": "e37362fbc464f52ca5345cff7653f9dad5186316023438ddbd72bbd18182b7e9"
+    },
+    {
+      "path": "source/raster/tlac-owl-teaching-master.png",
+      "bytes": 1175892,
+      "sha256": "9f1e0b437f58aa36bd40e9a561bcde14662660c923c462e9e7d46aca3e1667bb"
+    },
+    {
+      "path": "source/raster/tlac-owl-welcome-master.png",
+      "bytes": 694135,
+      "sha256": "fabb02bfb4feae9773f877ffc34d81d4cda567749d3b105ef9f2599979a638db"
+    },
+    {
+      "path": "source/raster/tlac-owl-writing-master.png",
+      "bytes": 861068,
+      "sha256": "0edc625edd8e5cee79285fd2936e816c97430ae0c5fc4b06b8e6470b58885451"
+    },
+    {
+      "path": "source/tlac-owl-lockup-compact.svg",
+      "bytes": 291227,
+      "sha256": "fabf0c4302a88db9e6ce17da8c08c177857f25f30a75ecadc479ee8adb95227a"
+    },
+    {
+      "path": "source/tlac-owl-lockup-horizontal.svg",
+      "bytes": 291230,
+      "sha256": "cd62bc6bce2534b6920dc07daf888ac0aebc258d9de96511e666282899b14adc"
+    },
+    {
+      "path": "source/tlac-owl-mark-grayscale.svg",
+      "bytes": 245034,
+      "sha256": "12a2fbcedab2e22bc0c27c202d49771bf65a73ac6d60a5b600e8bf520b1cbc9b"
+    },
+    {
+      "path": "source/tlac-owl-mark-one-color.svg",
+      "bytes": 41381,
+      "sha256": "51f92802ed8dbf583c7959a23bd5b47afa8affbd4e75ccbb608aa841bd774581"
+    },
+    {
+      "path": "source/tlac-owl-mark-reversed.svg",
+      "bytes": 44156,
+      "sha256": "f59f4b59a4b4e073067e99790dbb50a0545a8f7c859981687c2560ce051caf4f"
+    },
+    {
+      "path": "source/tlac-owl-mark-silhouette.svg",
+      "bytes": 16722,
+      "sha256": "b77b832d5ed9aad7223311d0dc48f116a47f34ecdfafde32ac01291fe067fdd3"
+    },
+    {
+      "path": "source/tlac-owl-mark.svg",
+      "bytes": 276955,
+      "sha256": "b57507c0348484a79421f0fc714574eca2c3c43d8e0d507ac83e1b6e14cc3fe7"
+    },
+    {
+      "path": "source/tlac-owl-mascot-neutral.svg",
+      "bytes": 276164,
+      "sha256": "62c5b0716b8508ab309f58309c8925b425686ef5e65345edb41f83471f3f3717"
+    },
+    {
+      "path": "dist/avatar/tlac-avatar-1024.png",
+      "bytes": 446098,
+      "sha256": "aa41e81cef51883fe1309e48d6d738f88c8cfe6e3b0bcb52251f79db67e84fe1"
+    },
+    {
+      "path": "dist/avatar/tlac-avatar-128.png",
+      "bytes": 14121,
+      "sha256": "3c0643f87e6bd55d8d56cf23f2e21a1d013630c31d68a67ecc40d500875c56ea"
+    },
+    {
+      "path": "dist/avatar/tlac-avatar-16.png",
+      "bytes": 648,
+      "sha256": "add164b592670fc85d1c54c94f8657fbfd82612cffe8121e55da72786d26a2ed"
+    },
+    {
+      "path": "dist/avatar/tlac-avatar-20.png",
+      "bytes": 780,
+      "sha256": "447ddd4c42118563523a2df36784c2c90eaa6526131481419f14d9d045e56be4"
+    },
+    {
+      "path": "dist/avatar/tlac-avatar-200.png",
+      "bytes": 28903,
+      "sha256": "8ec177eaef5d6ead415b9e89df3e68f4dfedbbf781db7d558e5b0c114f4bd00a"
+    },
+    {
+      "path": "dist/avatar/tlac-avatar-256.png",
+      "bytes": 43189,
+      "sha256": "94496704c3f3810c3727b854dd2f7ab7f77a9e660353ff161eed8dfcbd622f8e"
+    },
+    {
+      "path": "dist/avatar/tlac-avatar-32.png",
+      "bytes": 1626,
+      "sha256": "db428be6e38a409924c66d96bf00be09181e8bf968fd4c3a7071a03755523ec7"
+    },
+    {
+      "path": "dist/avatar/tlac-avatar-40.png",
+      "bytes": 2234,
+      "sha256": "e9ffabeca167b57de7eeec7f6115fc8dbd2dab1685b9d903ca037ac8937d0da9"
+    },
+    {
+      "path": "dist/avatar/tlac-avatar-512.png",
+      "bytes": 139371,
+      "sha256": "92fb08b575d7f6084487bc82379bd378c7d3e91282bee218bdf07271db8becf8"
+    },
+    {
+      "path": "dist/avatar/tlac-avatar-64.png",
+      "bytes": 4766,
+      "sha256": "e03e6ba9798440bc44beffe052ec5c741b6c1e4ed2d6dda5fb4e2fdee980ada1"
+    },
+    {
+      "path": "dist/favicon/favicon-16.png",
+      "bytes": 706,
+      "sha256": "e5a37b61307b113b4b67f7f9ee0285f872b207557dd7fd707acee2522b5b8e3b"
+    },
+    {
+      "path": "dist/favicon/favicon-180.png",
+      "bytes": 28206,
+      "sha256": "8cd4e51a2b01f589da3898d9d155dbcd13e515b7fda0579ab93eec06d1321299"
+    },
+    {
+      "path": "dist/favicon/favicon-192.png",
+      "bytes": 31378,
+      "sha256": "9bc0c417e612644c2691ab1335087335b312075888f723418eb04929b095165d"
+    },
+    {
+      "path": "dist/favicon/favicon-32.png",
+      "bytes": 1803,
+      "sha256": "d3bcd27fcdf175efe1fad0055de7af0605b7b09d31d9546d2642bcf06e01e2d2"
+    },
+    {
+      "path": "dist/favicon/favicon-48.png",
+      "bytes": 3466,
+      "sha256": "1ed3e1a11aa6b92c07b3b862b408a81655d35d1bdb8f686ffb52d609dcfbafa9"
+    },
+    {
+      "path": "dist/favicon/favicon-512.png",
+      "bytes": 163310,
+      "sha256": "ae7399a43b87e14a9791e24bfc4870b958199e1662f9aeb5057e70f09ddcfa4a"
+    },
+    {
+      "path": "dist/favicon/favicon.ico",
+      "bytes": 12137,
+      "sha256": "81c24f984945586a067207bdf67315cde2ffd7732c7aee03d7710255ccd39a1b"
+    },
+    {
+      "path": "dist/favicon/favicon.svg",
+      "bytes": 277128,
+      "sha256": "9a9f0a39c55fed040c016f3c789b59fcb22824bc5fe2fd02a2dddc0c0e020803"
+    },
+    {
+      "path": "dist/lockups/tlac-lockup-compact.png",
+      "bytes": 170928,
+      "sha256": "88ec60c19f71768e6ca78f9b83c013b71b00b5170ac56e791d8b512e00c313e2"
+    },
+    {
+      "path": "dist/lockups/tlac-lockup-horizontal.png",
+      "bytes": 114419,
+      "sha256": "f6377176d373cd562546b7c914e61a1a5c8238197caebd181f3adf6c71f22972"
+    },
+    {
+      "path": "dist/mark/svg/tlac-owl-mark-grayscale.svg",
+      "bytes": 245034,
+      "sha256": "12a2fbcedab2e22bc0c27c202d49771bf65a73ac6d60a5b600e8bf520b1cbc9b"
+    },
+    {
+      "path": "dist/mark/svg/tlac-owl-mark-one-color.svg",
+      "bytes": 41381,
+      "sha256": "51f92802ed8dbf583c7959a23bd5b47afa8affbd4e75ccbb608aa841bd774581"
+    },
+    {
+      "path": "dist/mark/svg/tlac-owl-mark-reversed.svg",
+      "bytes": 44156,
+      "sha256": "f59f4b59a4b4e073067e99790dbb50a0545a8f7c859981687c2560ce051caf4f"
+    },
+    {
+      "path": "dist/mark/svg/tlac-owl-mark-silhouette.svg",
+      "bytes": 16722,
+      "sha256": "b77b832d5ed9aad7223311d0dc48f116a47f34ecdfafde32ac01291fe067fdd3"
+    },
+    {
+      "path": "dist/mark/svg/tlac-owl-mark.svg",
+      "bytes": 276955,
+      "sha256": "b57507c0348484a79421f0fc714574eca2c3c43d8e0d507ac83e1b6e14cc3fe7"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-1024.png",
+      "bytes": 886827,
+      "sha256": "cb8fff02075bc62ac33aa6d7b03a9e64bc30359d34f44439f07c17315bfabfb1"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-128.png",
+      "bytes": 25015,
+      "sha256": "f5d9b08581d4ee15e927c56186a9879e8662829ba4160d2744cdc7ada8498658"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-16.png",
+      "bytes": 850,
+      "sha256": "5d04a25517f9575b3957d08630f543877ccb6a31748313e10ee7903ef7964bae"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-20.png",
+      "bytes": 1204,
+      "sha256": "a506b09a7330c9e9fcca75b7bb96cd90f64bcad424a08f0a1fd7c7cc9bc22636"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-200.png",
+      "bytes": 53230,
+      "sha256": "1b07322bd86d3073577129c70092f1cecbe8742af085e2c710a2458bec730fc3"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-256.png",
+      "bytes": 82125,
+      "sha256": "bd029ae803e3f6465e8fdb053b9075abc89805c066cb027147b11d3d7ffecb20"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-32.png",
+      "bytes": 2644,
+      "sha256": "e761db6214215dc502114910706caec63bd50fad0cbba2036f0da7e4f32cbfe3"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-40.png",
+      "bytes": 3725,
+      "sha256": "2614c9eac85c17329dce2bb23d5dbba729c534a324ac51b51260d2ea44160d00"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-512.png",
+      "bytes": 278578,
+      "sha256": "b11b0166c0db14c77f1226eddf7d6c8993d2aa95189ea35f77c55c4a56cb51c7"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-64.png",
+      "bytes": 8006,
+      "sha256": "6ff219b4e0521e2948a350140bfbc2ba0d26c24c4d82620f8c6e08e314c9e8d5"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-grayscale-1024.png",
+      "bytes": 705846,
+      "sha256": "b83af14abc639501584510222cc7b389c98072d8ff86321a817cf82e4b014db3"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-grayscale-128.png",
+      "bytes": 23292,
+      "sha256": "117e6fd41995be04cb66e1ba3934fd903465449a168f9f3e0abfb2fd43174210"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-grayscale-256.png",
+      "bytes": 72521,
+      "sha256": "1db5d5666359433c48724cda158d8395c6045638c867fd6748c11670087fce6e"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-grayscale-32.png",
+      "bytes": 2600,
+      "sha256": "43f4ea0f04945a002f64a68e766c63bfd9bc922cf5730a932932334464ffa0ed"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-grayscale-512.png",
+      "bytes": 233070,
+      "sha256": "3e61422273b64f150c09f4a16f37682d33c0ddf3c97b8cea1d4d18b9447dacf6"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-grayscale-64.png",
+      "bytes": 7807,
+      "sha256": "bd89b6117519fd1f0ee453598f154edac7ebfce563861f86fce07d9b0929adc4"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-one-color-1024.png",
+      "bytes": 214925,
+      "sha256": "dbd85bcd3c3dfaa4c6ab728a84f74524374eed56ff13345309b22444a490e172"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-one-color-128.png",
+      "bytes": 15967,
+      "sha256": "940e539e74bb59943ff5d63b51cb4f226d8f297d821710b15f0005a8145a7066"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-one-color-256.png",
+      "bytes": 38576,
+      "sha256": "5efbc8a5f613e4d507a4f5adc93faed899c9d06bfa8f3a71e6ea6e5d76dbc1c8"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-one-color-32.png",
+      "bytes": 2104,
+      "sha256": "452cc185fa2624c082d473aeea243651d364060c353e5dc8b028dcf052403120"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-one-color-512.png",
+      "bytes": 90551,
+      "sha256": "85c207c0cd1234db7f1ceb190895f0bdd626c128f8329d479bdcb4986f58bc59"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-one-color-64.png",
+      "bytes": 6030,
+      "sha256": "6719619668665975af987895e08645e2a90b4d458ada38146141ef606db1a680"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-reversed-1024.png",
+      "bytes": 244945,
+      "sha256": "5fa29598636a707d0c31ba2ecd6f9973f0ebb2261c8f287fbd1a7662972e9dc2"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-reversed-128.png",
+      "bytes": 19020,
+      "sha256": "404a54ab530a83b228640b04c04fce0841ed7a23dbd8fd6a9216023225147300"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-reversed-256.png",
+      "bytes": 46248,
+      "sha256": "6ef079e1ad7d7529f3af89c1c0e85f3b401aae0b94589cf018181c9274efe7dc"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-reversed-32.png",
+      "bytes": 2339,
+      "sha256": "b5b095baba4994151208d4b6444af32aaf4ac64572f68cd394029666daed8402"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-reversed-512.png",
+      "bytes": 107279,
+      "sha256": "20c2c4e7c4c8c095ee656e327d7797f1d3ce74f3cb3b3bc2d0e6c36826c8bd4a"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-reversed-64.png",
+      "bytes": 6795,
+      "sha256": "0999bf7a28d8a11534548417ab2e4167e4187d61ef90b7f07b6155bbd523d581"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-silhouette-1024.png",
+      "bytes": 65095,
+      "sha256": "29b387b4c227e117aa4b2727bbecddc3f4d79b4383cb95a915ab3606a6ce7cf5"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-silhouette-128.png",
+      "bytes": 6608,
+      "sha256": "2b80463a72ec88a8c30a53eec916ae08443a32e9a5682c89c169dbe50c25d93c"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-silhouette-256.png",
+      "bytes": 14372,
+      "sha256": "43b80f7d9cb7c93c5c5ee687348bf28c292d179691e04d2b87f7acafdb77ec33"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-silhouette-32.png",
+      "bytes": 1299,
+      "sha256": "850317cb09312d46bba624b5a1aabe8be30263e947c74a4e58b5ceb0362e4764"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-silhouette-512.png",
+      "bytes": 31288,
+      "sha256": "02075cc3e6e3db64a28b154b11e5a9a6cbb37da0cf5414ff2e27fd64227a2705"
+    },
+    {
+      "path": "dist/mark/tlac-owl-mark-silhouette-64.png",
+      "bytes": 2848,
+      "sha256": "339dec5cda38d11402838b7c4272dfe77eea8e1a1d19f5398e0cd9be454a18b1"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-building-1024.webp",
+      "bytes": 450722,
+      "sha256": "8ddfbaa07187ea8b1728579868e9e20d02dc8c998f816a7b07f3cab26d5e778d"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-building-320.webp",
+      "bytes": 55816,
+      "sha256": "4fbe27e2e35f987ed38290d5d9285b62d24cf93e94410983b806691bbd9df1e9"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-building-640.webp",
+      "bytes": 185566,
+      "sha256": "5eaebf053f826a95f1194b25d57ef17eba1c23c8b35c8dba42f4bbeaa581dc3d"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-checking-1024.webp",
+      "bytes": 322662,
+      "sha256": "825ba88a7ee5ef8ae4eb3efdfa13be81ceb8239c60ea3812c16ca1270abff9bc"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-checking-320.webp",
+      "bytes": 44762,
+      "sha256": "bde98657cc63efc0033b8e5f70e8202117b3b6451e7e27ef494dfcf82534b148"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-checking-640.webp",
+      "bytes": 143746,
+      "sha256": "443b49f8ecf8377c47e424b62d4a8e49e093b64d3f0cfd58fc24e09341c5ff84"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-coffee-1024.webp",
+      "bytes": 323406,
+      "sha256": "474d2b6443abe84a6956adebe723d4947334f67baf253d341a466625b4601627"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-coffee-320.webp",
+      "bytes": 44628,
+      "sha256": "149db8905343ff6e1c40a833a92759e7a2a3e9a19d4f97fef80513567a71c6d3"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-coffee-640.webp",
+      "bytes": 141820,
+      "sha256": "a3c352e1f742458c17112ecdc8ab21d82e500944398e1bca510d22e7cecb2f76"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-filing-1024.webp",
+      "bytes": 397140,
+      "sha256": "2f01926033d7275bc9d4d72cbd846d688adbc88e042f2065a03c3783bc7c6815"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-filing-320.webp",
+      "bytes": 50826,
+      "sha256": "cb9645f5480f47597bee3a4c451bd660069a0ddd782a4495e755a63737a60563"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-filing-640.webp",
+      "bytes": 168224,
+      "sha256": "68822e8aa8583f2a8ca0f965c83f5767874cf0d46d450d0d398b7e2f06de97aa"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-memory-1024.webp",
+      "bytes": 429322,
+      "sha256": "2ff601b0d16fdc62f4136bf7311c2143d0b79af4e46c3bccc136e5d646374764"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-memory-320.webp",
+      "bytes": 55762,
+      "sha256": "487bfc0954d293bc8ce5ca67247749b544c7dd8516889651c61ab28e29be98b2"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-memory-640.webp",
+      "bytes": 182462,
+      "sha256": "bca8619b919ad15d90b374525c0679f7a5f2a2758553884572ccc703d2e93806"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-relay-1024.webp",
+      "bytes": 407592,
+      "sha256": "757d793b3fe7a72b19f7c7e0cdacf0001d1cf79aa9c519974efceabb5e2c5b7b"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-relay-320.webp",
+      "bytes": 54070,
+      "sha256": "98d515a2d9488001906ac2115a952fad712bcc3e63389a4792c5ce18248b81b4"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-relay-640.webp",
+      "bytes": 175162,
+      "sha256": "20eeeaa051b45ec7f5d6dca999f97a893127aeaf98dae2858981b18f8ad51c62"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-teaching-1024.webp",
+      "bytes": 589042,
+      "sha256": "2eed963e0f5b4404f41649c993a0654a6b00b504e7fa6a11cdf9cc1894171f6a"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-teaching-320.webp",
+      "bytes": 68788,
+      "sha256": "8a581305f2bb15fe94b30a9c9bd71f44d3df022ed80c839c07b8865370a32703"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-teaching-640.webp",
+      "bytes": 240230,
+      "sha256": "5424d811174d7050c7f2867eb9b75671ce52bc996c57a3bc963c607403f41e6c"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-welcome-1024.webp",
+      "bytes": 330920,
+      "sha256": "4582198cbeed2a06411164f88c9da3d272f603c78013bc37441bbd50165b5a24"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-welcome-320.webp",
+      "bytes": 45970,
+      "sha256": "a2f92f29b9fd56e73cacb1614af9a5f42cf0bb4c25d41c426fd0c7ae46e708f8"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-welcome-640.webp",
+      "bytes": 146502,
+      "sha256": "ec7f5e558d0465eecf7b652ab37684de9ebc81dbde528828555f268bf9b6ff13"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-writing-1024.webp",
+      "bytes": 399666,
+      "sha256": "71fda33ab820019e0c3160078fd4b436814759cf3ae7967e7e69ee67305c7e0c"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-writing-320.webp",
+      "bytes": 52538,
+      "sha256": "4cf46d6eee8a999e9612f9a99c23488cef9c5420d1ab36390297b4b1817c4f8f"
+    },
+    {
+      "path": "dist/mascot/tlac-owl-writing-640.webp",
+      "bytes": 174448,
+      "sha256": "97d5dd401f22579b843716dc757e3a726af44fda81d094238fda758c37229e88"
+    },
+    {
+      "path": "dist/social/tlac-social-card.png",
+      "bytes": 163668,
+      "sha256": "9d0acaa272132a5a3fb48bfe53fa579393c75f256b96a9cd37233e4b5b72756c"
+    },
+    {
+      "path": "dist/social/tlac-social-square.png",
+      "bytes": 162693,
+      "sha256": "094db64a9df2e9a4012c4d4d0835c5e196a74b9e4545b9a507e71cd694b46bc0"
+    },
+    {
+      "path": "proofs/github-profile-desktop-1200x1000.png",
+      "bytes": 58880,
+      "sha256": "a50190755d20f0fd4891ba7a1cbff90db7d3241d521e5bb494f2728f0941c98b"
+    },
+    {
+      "path": "proofs/github-profile-mobile-390x844.png",
+      "bytes": 56832,
+      "sha256": "75d10bfd10d444d6be527a00e160edaa4669b8b1b0b0f17622ed7bf815b4ae72"
+    },
+    {
+      "path": "proofs/github-profile-mobile-frame.html",
+      "bytes": 683,
+      "sha256": "a37275c42733700bd7c26c3d207c8cdd339822eef1fb4c54aeb5cd5166ac6adc"
+    },
+    {
+      "path": "proofs/github-profile-preview.html",
+      "bytes": 4645,
+      "sha256": "d570e8d7b0f6bc8e06ea44528452b167fa6e04328380db4a3b6b162a732774af"
+    },
+    {
+      "path": "proofs/PROOF-RECEIPT.md",
+      "bytes": 1623,
+      "sha256": "e1d09ac6f3ab0616fcc32e741e114f866fec0c23617a0669a7b0440d4421400c"
+    },
+    {
+      "path": "proofs/similarity-screen-2026-07-18.md",
+      "bytes": 2029,
+      "sha256": "1e9c8015495ca27d9f535782493481946f9c0954cf88680e4fd08e9541e9f897"
+    },
+    {
+      "path": "proofs/svg-variant-render-1440.png",
+      "bytes": 53444,
+      "sha256": "2e475bef6129acf70c78928f59295adfe24dd3cd269f6006288324fcb403e5e3"
+    },
+    {
+      "path": "proofs/tlac-brand-proof-sheet.png",
+      "bytes": 591476,
+      "sha256": "5cdce1ac10f29e6b6ff2f080c81047c8e25f38bd0892516747a0510618d67547"
+    },
+    {
+      "path": "proofs/tlac-lockup-proof-sheet.png",
+      "bytes": 254011,
+      "sha256": "8df7c0b3b6fba8cd353752197d3252f269c0c60bb6aabffb42087ac9ed479878"
+    },
+    {
+      "path": "proofs/tlac-mark-proof-sheet.png",
+      "bytes": 612081,
+      "sha256": "c4657c4b1fb2661f2b36159db6065fd930568ba47bb2bd23db152b23132f0152"
+    },
+    {
+      "path": "proofs/tlac-mascot-pose-sheet.png",
+      "bytes": 710453,
+      "sha256": "8e3a50422ec051bf09647ba776668edbe97b4097ceba900b7b02550dbb589562"
+    },
+    {
+      "path": "proofs/vector-variant-preview.html",
+      "bytes": 1917,
+      "sha256": "f5cca2b9fbc1a983119296cf36ad9cf2388dc8a729d4c26c93fe86fb5439b21a"
+    }
+  ]
+}
