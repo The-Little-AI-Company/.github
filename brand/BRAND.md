@@ -1,6 +1,6 @@
 # The Little AI Company brand
 
-Hollis, the Little AI Company owl, is calm, quietly wise, mildly skeptical, warm, and
+Hoolio, the Little AI Company owl, is calm, quietly wise, mildly skeptical, warm, and
 competent when it counts. It gives the company a recognizable human-scale
 personality without turning the products into toys.
 
@@ -13,7 +13,7 @@ personality without turning the products into toys.
   research, teaching, presenting, checking, protecting, filing, memory, relay,
   connecting, and shipping poses. Use a pose only when it supports the
   surrounding message.
-- **Character name:** `Hollis`, or `Hollis, the Little AI Company owl` on first
+- **Character name:** `Hoolio`, or `Hoolio, the Little AI Company owl` on first
   mention.
 - **Company name:** always write `The Little AI Company`.
 - **Public story and voice:** follow `CHARACTER.md`.

@@ -20,7 +20,7 @@ The system should feel like a small, capable software workshop:
 - technical without looking corporate;
 - warm without becoming childish.
 
-Hollis, the Little AI Company owl, is the company's original visual signature.
+Hoolio, the Little AI Company owl, is the company's original visual signature.
 `CHARACTER.md` owns his public story and voice; this document owns his visual
 identity and production rules.
 

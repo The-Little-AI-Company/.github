@@ -25,92 +25,92 @@
     {
       "path": "source/poses/tlac-owl-building.svg",
       "bytes": 536516,
-      "sha256": "22d3022fd3e1b6176a71315e9c18f154a9cbac82687ac4b5f8e3455488763052"
+      "sha256": "4b1744c24714d4608425792b6d38adf19366593fdfd82693b5046bc6b0e1555b"
     },
     {
       "path": "source/poses/tlac-owl-celebrating.svg",
       "bytes": 361755,
-      "sha256": "65ddde30a9ce2a3d689dc7793f75d28f14531c7a74614d338dd6435919f593dc"
+      "sha256": "58d75d65a3494a871c9026cc0fc581bf17ed55f8b4eb309ece314fd8f5e83238"
     },
     {
       "path": "source/poses/tlac-owl-checking.svg",
       "bytes": 257843,
-      "sha256": "e0d694d44b647d6281cf3e388516550e6179ee37440db44f75067f6c33bde0b8"
+      "sha256": "50fbca06f77ea6a5b9c768da282284140b6595f05f778752819e19e567b703a9"
     },
     {
       "path": "source/poses/tlac-owl-coffee.svg",
       "bytes": 279583,
-      "sha256": "cf786ad477ee9ae2e421a9e69bde2945afd2f6a667b769f34908f5ee57cb4897"
+      "sha256": "ece7577bb324aac1f0052b42fae5487a5d903a47dc8be21ac470ea44fc9a1312"
     },
     {
       "path": "source/poses/tlac-owl-connecting.svg",
       "bytes": 449381,
-      "sha256": "149c9837b8580d751bc4903fcec5981b12ec38244a5f676382c9d9c9d16c8d00"
+      "sha256": "b9874c586770788dc78bdfaee4b5f37b5b919adf63fb173a16d308e385656d57"
     },
     {
       "path": "source/poses/tlac-owl-debugging.svg",
       "bytes": 500612,
-      "sha256": "d3b7114b51173625fd527eeaf9668269f4a92e7adf3cc3ea24c56b3e1ee48061"
+      "sha256": "9e8b982170640078cdff7ba4b2497c709c8e3b5fe5354bcf2c2145725318ee4f"
     },
     {
       "path": "source/poses/tlac-owl-filing.svg",
       "bytes": 389033,
-      "sha256": "1317b4ca3754547c6f5dc8fbeed2b8c5cc5732ad4ca445b93f797f1085bbf83d"
+      "sha256": "03a36635b1bfad7e8862d6970f5325fd74b251efe0b186778e6ba0f18e529d56"
     },
     {
       "path": "source/poses/tlac-owl-memory.svg",
       "bytes": 366881,
-      "sha256": "90ce983474a976d263d292c73e0fbfcb0fc3bd837cb74407f37ce9fc695ac944"
+      "sha256": "53409dc2b4e6e29df648770d6db3f3d7b23b63e8aa31faece0fea3d5cecf5d03"
     },
     {
       "path": "source/poses/tlac-owl-planning.svg",
       "bytes": 420354,
-      "sha256": "40b74f322b459fb57b5fb66811e6edd1a572b9bdc26872653437d9921c96d948"
+      "sha256": "13dab235e5129641c14e4b7803c32441d1d6ed5929b722a3bde8d458f41115b3"
     },
     {
       "path": "source/poses/tlac-owl-presenting.svg",
       "bytes": 382083,
-      "sha256": "95ecf26b8afc2049af6b9e7efbef44bfb628d35340135d6442bb56367d3bac68"
+      "sha256": "7b93b440b5fd46f0f1e4bb963a44f4884798f8de78e65541ef0affb8c0d4193e"
     },
     {
       "path": "source/poses/tlac-owl-protecting.svg",
       "bytes": 411834,
-      "sha256": "adeb5073e8129968de86b15eb04d1202b80ecc90ede4297664468c92e8b9f102"
+      "sha256": "a40dfb1e074d6f0797a8c743db761321b101dba4892e48bde6f58d95406e9e7b"
     },
     {
       "path": "source/poses/tlac-owl-relay.svg",
       "bytes": 360735,
-      "sha256": "aecccfec83616f779c022fe489b603f4bb6c8a4ca84206747be83e983d6f1623"
+      "sha256": "1415a794bdb1ea57696a746085f894bd29d537d0d96f8c05da7df847ed2fd931"
     },
     {
       "path": "source/poses/tlac-owl-research.svg",
       "bytes": 559766,
-      "sha256": "cc5506231c9b8d6643366b58f68fec551ddbf81401085c55cfeeeca7751ed6c4"
+      "sha256": "7a78f66d9d0c814105c2ea7e55a6341db1b81ebb445193fa74a64ea44d363e3a"
     },
     {
       "path": "source/poses/tlac-owl-shipping.svg",
       "bytes": 254495,
-      "sha256": "c4a78111a3ef36779da8b82777d015923015ed67fd7eed2eeb35e1b06e4555dc"
+      "sha256": "26cc08a394b98d90e3fadd9223680a9e2e7dacbfb48ba51d5025d0941139e5f4"
     },
     {
       "path": "source/poses/tlac-owl-teaching.svg",
       "bytes": 493335,
-      "sha256": "d8295a3cf00ab967920df9977d5af852a8036fc7eaee633e8fdcc14c403d307c"
+      "sha256": "de8146ffb2775e249ab1f56b0c74d8ce0b591a3db7af2bd5ce227182cecd2bbf"
     },
     {
       "path": "source/poses/tlac-owl-testing.svg",
       "bytes": 489966,
-      "sha256": "8e5fc4298927b88f2999182e7ba66bdb3927d6bbebf9e6799f9b79baeec44184"
+      "sha256": "683fbcb2176795f4a061fe9b4526e97ee4ddfe365b9f3d995ba2b2a43b6c44c9"
     },
     {
       "path": "source/poses/tlac-owl-welcome.svg",
       "bytes": 256783,
-      "sha256": "8a954c53a62c42d5a01afb2bb5b87af49132cfd2dbcab61d9de30d8b4eae55ec"
+      "sha256": "84582f91a860129359ba32953e963295a6debc5d694526f3f1e02b71b74bbac7"
     },
     {
       "path": "source/poses/tlac-owl-writing.svg",
       "bytes": 329540,
-      "sha256": "f3623df2c84cb3f34278b73923db86973a4a690bd51ccdb07d4c805347cc1174"
+      "sha256": "0f862ca7b0bd4ec654c34a0b8da907354b294605d603a3035f7f8024f9c6ad4f"
     },
     {
       "path": "source/PROVENANCE.md",
@@ -225,32 +225,32 @@
     {
       "path": "source/tlac-owl-mark-grayscale.svg",
       "bytes": 245135,
-      "sha256": "454c1a068f802d0a36c6cb0b32d22873709b365cc64e551772e5903a3d3de802"
+      "sha256": "ae83a60d8088da12f2f3427d6bd601e041260a20385099519a99c951ee1c47f4"
     },
     {
       "path": "source/tlac-owl-mark-one-color.svg",
       "bytes": 41482,
-      "sha256": "d64753c969d10dee4a53e3d7f33e4c560ab0788d3610e0b40b4e5f5a9f249904"
+      "sha256": "1abebb84374de1a371cb7cf725a838987de79beff8e36d47a5153d6fc3baefaf"
     },
     {
       "path": "source/tlac-owl-mark-reversed.svg",
       "bytes": 44256,
-      "sha256": "1dfb5744a28c5c229d23b5959aca1b9846433bf2a9e145a3230d03eb8f8fc345"
+      "sha256": "2a7761c156098eabb6359f3a0b1d0bb94c12d18f03ba8ccc5ece366bf5e341bd"
     },
     {
       "path": "source/tlac-owl-mark-silhouette.svg",
       "bytes": 16819,
-      "sha256": "32bdfd778fc6049d8d7132ff8b9f45eba83f9a211e1e6d1133830b20541deda2"
+      "sha256": "761428d038a5fd89934c70046948e8902c805bd8c23e7411454512604b0ee7b6"
     },
     {
       "path": "source/tlac-owl-mark.svg",
       "bytes": 277043,
-      "sha256": "1aa79baa1e761e66dbbc1a0a952dc1bf75b68a6be31adb2aa11bf9360846ab88"
+      "sha256": "a634ddc23bbf2dbc6a10c38b41951cb6847ea9251927d21c5f7dff5f979237cb"
     },
     {
       "path": "source/tlac-owl-mascot-neutral.svg",
       "bytes": 279583,
-      "sha256": "cf786ad477ee9ae2e421a9e69bde2945afd2f6a667b769f34908f5ee57cb4897"
+      "sha256": "ece7577bb324aac1f0052b42fae5487a5d903a47dc8be21ac470ea44fc9a1312"
     },
     {
       "path": "dist/avatar/tlac-avatar-1024.png",
@@ -355,27 +355,27 @@
     {
       "path": "dist/mark/svg/tlac-owl-mark-grayscale.svg",
       "bytes": 245135,
-      "sha256": "454c1a068f802d0a36c6cb0b32d22873709b365cc64e551772e5903a3d3de802"
+      "sha256": "ae83a60d8088da12f2f3427d6bd601e041260a20385099519a99c951ee1c47f4"
     },
     {
       "path": "dist/mark/svg/tlac-owl-mark-one-color.svg",
       "bytes": 41482,
-      "sha256": "d64753c969d10dee4a53e3d7f33e4c560ab0788d3610e0b40b4e5f5a9f249904"
+      "sha256": "1abebb84374de1a371cb7cf725a838987de79beff8e36d47a5153d6fc3baefaf"
     },
     {
       "path": "dist/mark/svg/tlac-owl-mark-reversed.svg",
       "bytes": 44256,
-      "sha256": "1dfb5744a28c5c229d23b5959aca1b9846433bf2a9e145a3230d03eb8f8fc345"
+      "sha256": "2a7761c156098eabb6359f3a0b1d0bb94c12d18f03ba8ccc5ece366bf5e341bd"
     },
     {
       "path": "dist/mark/svg/tlac-owl-mark-silhouette.svg",
       "bytes": 16819,
-      "sha256": "32bdfd778fc6049d8d7132ff8b9f45eba83f9a211e1e6d1133830b20541deda2"
+      "sha256": "761428d038a5fd89934c70046948e8902c805bd8c23e7411454512604b0ee7b6"
     },
     {
       "path": "dist/mark/svg/tlac-owl-mark.svg",
       "bytes": 277043,
-      "sha256": "1aa79baa1e761e66dbbc1a0a952dc1bf75b68a6be31adb2aa11bf9360846ab88"
+      "sha256": "a634ddc23bbf2dbc6a10c38b41951cb6847ea9251927d21c5f7dff5f979237cb"
     },
     {
       "path": "dist/mark/tlac-owl-mark-1024.png",
@@ -848,9 +848,9 @@
       "sha256": "d570e8d7b0f6bc8e06ea44528452b167fa6e04328380db4a3b6b162a732774af"
     },
     {
-      "path": "proofs/name-screen-hollis-2026-07-18.md",
-      "bytes": 1226,
-      "sha256": "7b5229f9bbe80345af0693113a1c52a4dc1e71567015c76bbcd9382e6e3c170b"
+      "path": "proofs/name-screen-hoolio-2026-07-23.md",
+      "bytes": 1522,
+      "sha256": "8540c082b2535d737fb34c9c557c19ad39408a11640818e5decfbd7fd4c85bbf"
     },
     {
       "path": "proofs/PROOF-RECEIPT.md",
