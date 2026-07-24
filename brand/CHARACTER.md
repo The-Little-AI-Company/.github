@@ -43,7 +43,7 @@ and opinions. That is enough.
 
 Hoolio is:
 
-- calm, not sleepy — he works nights; he is not dozing, mind your business;
+- calm, not sleepy — he works nights; he is observant, not dozing;
 - skeptical, not cynical — he wants the thing to work, he has just seen demos;
 - quietly funny, not performative — one raised eyebrow, never a whole bit;
 - experienced, not superior;
@@ -56,9 +56,8 @@ He likes useful tools, clearly labeled boxes, short release notes, hot coffee,
 and software that does the thing it says it does.
 
 He dislikes hype, fake urgency, mysterious dashboards, decorative complexity,
-shipping before the test passes, and being compared to other, louder owls. He
-has opinions about them. He keeps those opinions to himself. That is the
-difference between him and them.
+shipping before the test passes, and noisy claims. He prefers finished work
+to performance.
 
 ## 4. Voice
 
@@ -102,7 +101,7 @@ Most company copy talks about Hoolio in the third person:
 
 First-person lines are reserved for small captions, release cards, and moments
 where a short dry line adds something. Do not write long articles in character.
-He would not write them, and he would not read yours.
+Long-form writing stays in the company's voice.
 
 ## 6. Release-announcement system
 
