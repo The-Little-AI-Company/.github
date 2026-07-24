@@ -33,6 +33,7 @@ SIGNAL = "#205F5D"
 MUTED = "#6E6456"
 CHARCOAL = "#201A15"
 SVG_NS = "http://www.w3.org/2000/svg"
+CHARACTER_NAME = "Hoolio"
 
 POSES = (
     "welcome",
@@ -279,14 +280,14 @@ def save_vector_sources(mark: Image.Image, mascots: dict[str, Image.Image]) -> d
             mark,
             VECTOR_SOURCE / "tlac-owl-mark.svg",
             size=512,
-            title="Hoolio, the Little AI Company owl mark",
+            title=f"{CHARACTER_NAME}, the Little AI Company owl mark",
             matte=PAPER,
         ),
         "one_color": trace_svg(
             one_color_raster(mark, INK),
             VECTOR_SOURCE / "tlac-owl-mark-one-color.svg",
             size=512,
-            title="One-color Hoolio owl mark for The Little AI Company",
+            title=f"One-color {CHARACTER_NAME} owl mark for The Little AI Company",
             color_precision=8,
             speckle=5,
             matte=SURFACE,
@@ -295,7 +296,7 @@ def save_vector_sources(mark: Image.Image, mascots: dict[str, Image.Image]) -> d
             one_color_raster(mark, PAPER),
             VECTOR_SOURCE / "tlac-owl-mark-reversed.svg",
             size=512,
-            title="Reversed Hoolio owl mark for The Little AI Company",
+            title=f"Reversed {CHARACTER_NAME} owl mark for The Little AI Company",
             color_precision=8,
             speckle=5,
             matte=CHARCOAL,
@@ -304,7 +305,7 @@ def save_vector_sources(mark: Image.Image, mascots: dict[str, Image.Image]) -> d
             grayscale_raster(mark),
             VECTOR_SOURCE / "tlac-owl-mark-grayscale.svg",
             size=512,
-            title="Grayscale Hoolio owl mark for The Little AI Company",
+            title=f"Grayscale {CHARACTER_NAME} owl mark for The Little AI Company",
             color_precision=5,
             matte=PAPER,
         ),
@@ -312,7 +313,7 @@ def save_vector_sources(mark: Image.Image, mascots: dict[str, Image.Image]) -> d
             silhouette_raster(mark),
             VECTOR_SOURCE / "tlac-owl-mark-silhouette.svg",
             size=512,
-            title="Hoolio owl silhouette for The Little AI Company",
+            title=f"{CHARACTER_NAME} owl silhouette for The Little AI Company",
             color_precision=8,
             speckle=5,
             matte=SURFACE,
@@ -324,7 +325,7 @@ def save_vector_sources(mark: Image.Image, mascots: dict[str, Image.Image]) -> d
             image,
             POSE_SOURCE / f"tlac-owl-{pose}.svg",
             size=512,
-            title=f"Hoolio, the Little AI Company owl: {pose.replace('-', ' ')}",
+            title=f"{CHARACTER_NAME}, the Little AI Company owl: {pose.replace('-', ' ')}",
             color_precision=5,
             speckle=12,
             matte=PAPER,
