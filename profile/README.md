@@ -17,8 +17,6 @@ runs that you can't see, stop, or undo.
 | [Callout](https://github.com/The-Little-AI-Company/callout) | Press a hotkey over anything you're reading. A small popover tells you whether the text is trying to manipulate you, and whether its claims hold up against sources it fetched. Windows tray app. Bring your own keys. No server, no account, no telemetry. | Private beta. Windows only. |
 | [Vivary](https://github.com/vivary-dev/vivary) | Typed memory, search, and human gates for AI-agent workspaces, kept as plain Markdown files you can read and diff. One command scaffolds a workspace. | In development. Scaffolder published on npm and PyPI. |
 
-Callout is a joint product with [Wazoo](https://wazoo.dev).
-
 ## What we hold to
 
 - **You decide.** The tool proposes and you approve. A human gate is a feature,
