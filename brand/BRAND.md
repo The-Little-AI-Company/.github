@@ -42,24 +42,28 @@ wrong.
 
 ## Type
 
-- Monospace for headings, labels, navigation, and badges. Prefer the system
-  monospace stack: `ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`.
-  If a web font is needed, use JetBrains Mono.
-- A plain grotesk for body text. Inter is fine.
-- Headings in caps with letter spacing. Body text in sentence case.
+- Display: Big Shoulders Stencil (OFL), weight 800, for headings, the
+  placard, plate names, and buttons. Caps only where the signage metaphor
+  holds (the placard, plate names, buttons). Other headings in sentence case.
+- Body: Archivo (OFL), 400 and 600.
+- Data: JetBrains Mono for version stamps and badges. Where a web font can't
+  load, such as an SVG served by GitHub, fall back to the system monospace
+  stack in caps with letter spacing.
+- The website self-hosts both web fonts under `public/fonts/`.
 
 ## Badges
 
-Use [shields.io](https://shields.io) with these parameters on every badge:
+Use [shieldcn.dev](https://shieldcn.dev) with these parameters on every badge:
 
 ```text
-style=flat-square&labelColor=111111
+mode=dark&font=jetbrains-mono&labelColor=111111&radius=0&split=true&logo=false
 ```
 
-Color the value side `EDE9E0` for facts (license, site) and `FF5A1F` for
-versions. A build status badge keeps the shields.io state colors, since green
-and red carry the fact. Keep badges on one line under the title. No emoji in
-badges or headings.
+Square corners and a split value block, so a badge row reads like the data
+plates on the website. Color the value `EDE9E0` for facts (license, site) and
+`FF5A1F` for versions and status. A build badge keeps the shieldcn state
+colors, since green and red carry the fact. Keep badges on one line under the
+title. No emoji in badges or headings.
 
 ## Name
 
