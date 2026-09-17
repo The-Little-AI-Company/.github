@@ -14,7 +14,7 @@ runs that you can't see, stop, or undo.
 
 | Tool | What it does | Status |
 | --- | --- | --- |
-| [Callout](https://github.com/The-Little-AI-Company/callout) | Press a hotkey over anything you're reading. A small popover tells you whether the text is trying to manipulate you, and whether its claims hold up against sources it fetched. Windows tray app. Bring your own keys. No server, no account, no telemetry. | Released. Windows 10 and 11. [Download](https://github.com/The-Little-AI-Company/callout/releases/latest). |
+| [Callout](https://github.com/The-Little-AI-Company/callout) | Press a hotkey over anything you're reading. A small popover tells you whether the text is trying to manipulate you, and whether its claims hold up against sources it fetched. Windows tray app. Bring your own keys. No server, no account, no telemetry. | Released. Windows 10 and 11. [Download](https://github.com/The-Little-AI-Company/callout/releases/latest/download/Callout-Setup.exe). |
 | [Vivary](https://github.com/vivary-dev/Vivary-New) | A desktop workspace for working with AI agents on your own projects. Agent chat, project files, tools, and memory in one app. Your agents, credentials, files, and history stay on the host, and a web client can reach a self-hosted instance. | In development. Windows first. |
 
 ## What we hold to
