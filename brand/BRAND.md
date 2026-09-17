@@ -1,117 +1,73 @@
 # The Little AI Company brand
 
-Hoolio, the Little AI Company owl, is calm, quietly wise, mildly skeptical, warm, and
-competent when it counts. It gives the company a recognizable human-scale
-personality without turning the products into toys.
+Adopted 2026-09-17. The previous owl identity (Hoolio) is retired and kept
+under `archive/hoolio-2026-09-17/` for reference. Do not reuse it.
 
-## Identity
+## Mark
 
-- **Primary mark:** the owl head. Use it for the GitHub organization avatar,
-  favicon, site header, footer, and other small placements.
-- **Mascot:** the full owl figure. The reusable library includes welcome,
-  coffee, celebrating, building, planning, debugging, testing, writing,
-  research, teaching, presenting, checking, protecting, filing, memory, relay,
-  connecting, and shipping poses. Use a pose only when it supports the
-  surrounding message.
-- **Character name:** `Hoolio`, or `Hoolio, the Little AI Company owl` on first
-  mention.
-- **Company name:** always write `The Little AI Company`.
-- **Public story and voice:** follow `CHARACTER.md`.
+The mark is a rabbit skull: two upright ears, round eye sockets, a nasal cut,
+two front teeth. One flat color, no outline, no gradient. It reads at 16 px.
 
-## Personality guardrails
+| File | Use |
+| --- | --- |
+| `skull-bunny/skull-bunny-mark.svg` | Ink mark on a transparent background. Default. |
+| `skull-bunny/skull-bunny-mark-reversed.svg` | Bone mark for dark surfaces. |
+| `skull-bunny/favicon.svg` | Mark that switches ink and bone with the viewer's color scheme. |
+| `skull-bunny/avatar-*.png` | GitHub organization avatar, bone background. Upload `avatar-1024.png`. |
+| `skull-bunny/avatar-dark-1024.png` | Avatar for dark contexts, ink background. |
+| `skull-bunny/favicon-*.png`, `favicon.ico` | Browser and app icons, transparent. |
+| `../profile/assets/hero.svg` | The organization profile banner. |
 
-The owl should feel:
+`skull-bunny/SHA256SUMS` lists the hashes of every raster export.
 
-- calm, not sleepy;
-- skeptical, not sarcastic;
-- relaxed, not intoxicated;
-- experienced, not superior;
-- approachable, not childish.
+Rules:
 
-Do not add AI badges, circuitry, robot parts, glowing brains, wizard props,
-sports-mascot aggression, or school-crest framing.
+- Keep the mark in one color. Never add gradients, outlines, glow, or a face.
+- Keep the whole mark. Do not crop to the ears or the eyes.
+- Do not rotate it, tilt it, or place it inside a circle or a shield.
+- Leave clear space around it of at least one ear width.
 
 ## Palette
 
 | Token | Value | Use |
 | --- | --- | --- |
-| Espresso | `#2B2118` | Primary ink and outlines |
-| Warm cream | `#F3EBDD` | Primary light surface |
-| Faded rust | `#B85C38` | Cardigan and warm accent |
-| Muted teal | `#2D7A78` | Secondary accent |
-| Signal teal | `#205F5D` | Accessible small text and focus states |
+| Ink | `#111111` | Text, the mark on light surfaces, dark surfaces |
+| Bone | `#EDE9E0` | Light surface, the mark on dark surfaces |
+| Concrete | `#8A8A85` | Secondary text, rules, disabled states |
+| Safety orange | `#FF5A1F` | One accent per view: links, the active state, one badge color |
+| Steel | `#2A2D31` | Raised panels on dark surfaces |
 
-Website tokens may use nearby values when needed for accessible contrast, but
-the owl itself should not be recolored.
+Use safety orange once per view. If two things are orange, one of them is
+wrong.
 
-## Typography
+## Type
 
-Use the existing TLAC pairing:
+- Monospace for headings, labels, navigation, and badges. Prefer the system
+  monospace stack: `ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`.
+  If a web font is needed, use JetBrains Mono.
+- A plain grotesk for body text. Inter is fine.
+- Headings in caps with letter spacing. Body text in sentence case.
 
-- Fraunces for display headings and the company name.
-- Inter for body copy and interface text.
-- JetBrains Mono only for small technical labels.
+## Badges
 
-## Asset map
+Use [shields.io](https://shields.io) with these parameters on every badge:
 
-- `DESIGN.md` is the governing visual-system and SVG production specification.
-- `CHARACTER.md` is the governing story, voice, and release-announcement
-  specification.
-- `source/tlac-owl-mark.svg` is the full-color vector mark.
-- `source/tlac-owl-mark-one-color.svg`, `-reversed.svg`, `-grayscale.svg`, and
-  `-silhouette.svg` are the required mark variants.
-- `source/tlac-owl-lockup-horizontal.svg` and `-compact.svg` are the wordmark
-  lockups.
-- `source/tlac-owl-mascot-neutral.svg` and `source/poses/` contain vector mascot
-  masters.
-- `source/raster/` contains the reviewed transparent source renders used by the
-  deterministic vector export.
-- `source/fonts/` contains the exact Fraunces and Inter font files and their
-  SIL Open Font License texts.
-- `dist/avatar/` contains GitHub and app-avatar exports.
-- `dist/favicon/` contains SVG, ICO, browser, and app-icon exports.
-- `dist/lockups/` contains transparent PNG lockups.
-- `dist/mascot/` contains optimized transparent WebP poses.
-- `dist/social/` contains the Open Graph card and social square.
-- `proofs/` contains review sheets, not production assets.
-- `archive/` contains the pre-rollout organization avatar for rollback.
-- `MANIFEST.json` records file sizes and SHA-256 hashes for the generated
-  illustration library.
-
-To rebuild from a clean checkout:
-
-```powershell
-python -m venv brand/.working/.venv
-brand/.working/.venv/Scripts/python.exe -m pip install -r brand/requirements.txt
-brand/.working/.venv/Scripts/python.exe brand/scripts/export_assets.py
+```text
+style=flat-square&labelColor=111111
 ```
 
-The exporter parses every SVG, rejects embedded image payloads, outlines the
-bundled fonts for portable lockups and profile art, verifies the exact company
-name in both lockups, and regenerates the manifest.
+Color the value side `EDE9E0` for facts (license, site) and `FF5A1F` for
+versions. A build status badge keeps the shields.io state colors, since green
+and red carry the fact. Keep badges on one line under the title. No emoji in
+badges or headings.
 
-## Provenance and licenses
+## Name
 
-- The owl artwork was generated for The Little AI Company with OpenAI image
-  generation on 2026-07-18, reviewed by Jeff, and converted into SVG geometry
-  by the pinned exporter. The applicable OpenAI terms state the user's output
-  rights: <https://openai.com/policies/terms-of-use/>.
-- Fraunces and Inter come from the Google Fonts repository and are distributed
-  under the SIL Open Font License. The license texts ship beside the font files.
-- VTracer `0.6.15` and FontTools `4.63.0` are MIT-licensed. Pillow `12.3.0`
-  uses the MIT-CMU license. These tools are dependencies of the exporter and
-  are not embedded in the exported artwork.
-- The bounded collision-screening receipt is
-  `proofs/similarity-screen-2026-07-18.md`. It is a preliminary screen, not
-  professional legal clearance.
+Write `The Little AI Company` in prose. In the mark's lockup and in monospace
+headings, write `THE LITTLE AI COMPANY`. Do not abbreviate to TLAC in public.
 
-## Usage
+## Voice
 
-- Give the mark at least 12.5% of its width as clear space.
-- Use the warm-cream avatar export for GitHub so it remains legible in light and
-  dark themes.
-- Use the reversed mark on charcoal or other very dark surfaces.
-- Do not place the full mascot below 120 CSS pixels.
-- Use useful alt text when the pose communicates meaning. Use empty alt text
-  when the owl is decorative beside text that already states the message.
-- Do not stretch, rotate, tint, outline, or place the mark inside another badge.
+Say what the tool does and what it does not do. Name limits before claims.
+State versions and status as they are. No hype words, no exclamation points,
+no mascot dialogue. The skull bunny is a mark, not a character.

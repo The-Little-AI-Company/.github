@@ -1,2 +1,2 @@
 # Preserve upstream font license text byte-for-byte without whitespace rewrites.
-brand/source/fonts/**/OFL.txt -diff
+brand/archive/hoolio-2026-09-17/source/fonts/**/OFL.txt -diff
